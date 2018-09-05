@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text To Voice</title>
+	<script src='responsivevoice.js'></script>
+</head>
+<body>
+	<!-- <input id="text-voice" type="text" name="voice" required> -->
+
+	<textarea id="text-voice" placeholder="Type Here" style="width: 100%" rows="30">UK English text to speech needs good technology to work well, but that technology is difficult to come by, and it’s always a pain to implement. ResponsiveVoice gets you an all-in-one, affordable and pain-free solution to integrate text to speech with an Australian accent, one that only weighs 14kB and solves the myriad problems speech synthesis entails, which include (but unfortunately are not limited to) per-character costs, having to initialise the speech engine after page load, timing delays between API calls, speech rate problems, it’s a mess we chose to tidy up so you don’t have to!</textarea> <br>
+	
+	<button id="btn-voice" onclick="voice()">Play</button>
+	<script type="text/javascript">
+		function voice(){
+			var textVoice = document.getElementById('text-voice').value;
+ 			responsiveVoice.speak(textVoice, 'Indonesian Female' );
+		}
+	</script>
+</body>
+</html>
